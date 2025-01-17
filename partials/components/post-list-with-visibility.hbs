@@ -81,19 +81,6 @@
 
                 {{!-- All posts --}}
                 {{#match feed "index"}}
-                    {{#match pagination.page 2}}
-                        {{#get "posts" include="authors" limit=@config.posts_per_page as |recent|}}
-                            {{#if @member}}
-                                {{#foreach recent visibility="public,members"}}
-                                    {{> "post-card"}}
-                                {{/foreach}}
-                            {{else}}
-                                {{#foreach recent visibility="public"}}
-                                    {{> "post-card"}}
-                                {{/foreach}}
-                            {{/if}}
-                        {{/get}}
-                    {{/match}}
                     {{#if @member}}
                         {{#foreach posts visibility="public,members"}}
                             {{> "post-card" lazyLoad=true}}
