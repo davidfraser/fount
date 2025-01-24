@@ -7,11 +7,18 @@ Most of the information from there now on are therefore about Source.
 
 The following changes have been made from the [Source theme](https://github.com/TryGhost/Source/):
 
+## Technical
+
+* Browser Javascript plugins are loaded through yarn, and packaged automatically.
+  This should make adding new dependencies and keeping them up to date easier...
+
 ## Styling
 
 * *Visibility*: posts that are members-only are generally not listed when somebody is not logged in.
 * *Tag Styling*: tags are styled with a light instead of font, in lowercase. All tags are shown on posts, not just the primary tag.
 * *Menu Styling*: menus are adjusted to handle more and wider items
+* *Footnotes*: writing `[[N]]` where `N` is an (arbitray) number will create a footnote button that will pop-up the footnote text defined in a paragraph starting with the same-numbered `[[N]]:`.
+  Note: this is done with [littlefoot](https://littlefoot.js.org/), which also rewrites the numbers to be sequential.
 
 ## Bug Fixes
 
