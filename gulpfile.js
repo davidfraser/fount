@@ -47,6 +47,7 @@ function css(done) {
     pump([
         src([
             'assets/css/screen.css',
+            'node_modules/@bibleup/bibleup/dist/css/bibleup.css',
             'node_modules/littlefoot/dist/littlefoot.css',
          ], {sourcemaps: true}),
         postcss([
@@ -62,6 +63,7 @@ function css(done) {
 function jslibs(done) {
     pump([
         src([
+            'node_modules/@bibleup/bibleup/dist/umd/bibleup.min.js',
             'node_modules/imagesloaded/imagesloaded.pkgd.min.js',
             'node_modules/littlefoot/dist/littlefoot.js',
             'node_modules/photoswipe/dist/photoswipe.min.js',

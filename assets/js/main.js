@@ -64,3 +64,8 @@
     setupFootnotes();
     applyFootnotes();
 })();
+
+(function () {
+    bibleRefs = setupBibleRefs();
+    applyBibleRefs(bibleRefs);
+})();

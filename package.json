@@ -214,6 +214,7 @@
         ]
     },
     "dependencies": {
+        "@bibleup/bibleup": "^1.1.0",
         "imagesloaded": "4.1.4",
         "littlefoot": "4.0.0-8",
         "photoswipe": "4.1.3",
