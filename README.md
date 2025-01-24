@@ -16,11 +16,12 @@ The following changes have been made from the [Source theme](https://github.com/
 
 * *Visibility*: posts that are members-only are generally not listed when somebody is not logged in.
 * *Tag Styling*: tags are styled with a light instead of font, in lowercase. All tags are shown on posts, not just the primary tag.
-* *Menu Styling*: menus are adjusted to handle more and wider items
 * *Footnotes*: writing `[[N]]` where `N` is an (arbitray) number will create a footnote button that will pop-up the footnote text defined in a paragraph starting with the same-numbered `[[N]]:`.
   _Note_: this is done with [littlefoot](https://littlefoot.js.org/), which also rewrites the numbers to be sequential.
 * *Bible References*: Standard references to chapters and verses in the Christian Bible are automatically linked and will show a pop-up with the NIV text for that verse.
   _Note_: this is done with [bibleup](https://bibleup.netlify.app/).
+* *Menu Styling*: menus are adjusted to handle more and wider items
+* *Copyright Notice*: rather than saying "Powered by Ghost", a customizable copyright text appears.
 
 ## Bug Fixes
 

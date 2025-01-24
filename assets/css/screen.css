@@ -2797,6 +2797,8 @@ figcaption a {
 .gh-footer-copyright {
     text-align: right;
     white-space: nowrap;
+    font-weight: 300;
+    font-size: 1.25rem;
 }
 
 .gh-footer-copyright a {
