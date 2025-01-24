@@ -9,6 +9,11 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@bibleup/bibleup@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@bibleup/bibleup/-/bibleup-1.1.0.tgz#256e839e367cd4d7747be87f2d6547c1d0376234"
+  integrity sha512-Ig83FMB6/MS989tZ4GpOuxLXH+AW2G3lukDoXy8Dr327OAlctBG9pJXIT7bYM20i/4R46W5QwktzcS50i4w4qQ==
+
 "@elastic/elasticsearch@8.10.0":
   version "8.10.0"
   resolved "https://registry.yarnpkg.com/@elastic/elasticsearch/-/elasticsearch-8.10.0.tgz#48842b3358b8ea4d37d75cff29fdd37fdf0b2996"
