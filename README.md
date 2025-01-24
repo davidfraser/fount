@@ -1,7 +1,25 @@
 # fount
 
-This is a theme for [Ghost](http://github.com/tryghost/ghost/). It's based on the default [Source theme](https://github.com/TryGhost/Source/), with some changes.
-Most of the information here is therefore about Source.
+This is a theme for [Ghost](http://github.com/tryghost/ghost/). It's based on the default [Source theme](https://github.com/TryGhost/Source/), with some changes, listed in the first section *Changes*.
+Most of the information from there now on are therefore about Source.
+
+# Changes
+
+The following changes have been made from the [Source theme](https://github.com/TryGhost/Source/):
+
+## Styling
+
+* *Visibility*: posts that are members-only are generally not listed when somebody is not logged in.
+* *Tag Styling*: tags are styled with a light instead of font, in lowercase. All tags are shown on posts, not just the primary tag.
+* *Menu Styling*: menus are adjusted to handle more and wider items
+
+## Bug Fixes
+
+* *Pagination fix*: a [fix to a strange pagination bug in Source](https://github.com/TryGhost/Source/pull/72).
+
+## Local Site Changes
+
+* A separate feed was made for photos...
 
 # Source
 
