@@ -63,10 +63,10 @@ function jslibs(done) {
     pump([
         src([
             'node_modules/imagesloaded/imagesloaded.pkgd.min.js',
+            'node_modules/littlefoot/dist/littlefoot.js',
             'node_modules/photoswipe/dist/photoswipe.min.js',
             'node_modules/photoswipe/dist/photoswipe-ui-default.min.js',
             'node_modules/reframe.js/dist/reframe.min.js',
-            'node_modules/littlefoot/dist/littlefoot.js',
         ]),
         dest('assets/js/lib'),
         livereload()
