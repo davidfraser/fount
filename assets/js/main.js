@@ -58,3 +58,9 @@
         wrapper.appendChild(table);
     });
 })();
+
+/* Footnotes */
+(function () {
+    setupFootnotes();
+    applyFootnotes();
+})();
