@@ -1,10 +1,13 @@
 <script>
     function setupBibleRefs() {
-        return new BibleUp(document.body, {
+        document.bibleRefs = new BibleUp(document.body, {
             "version": "NIV",
         })
     }
-    function applyBibleRefs(bibleRefs) {
-        bibleRefs.create();
+    function applyBibleRefs() {
+        document.bibleRefs.create();
+    }
+    function refreshBibleRefs(target) {
+        document.bibleRefs.refresh({}, false, target);
     }
 </script>

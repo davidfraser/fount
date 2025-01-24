@@ -61,7 +61,10 @@
                 title="See Footnote <% number %>"
             />
             <% number %>
-          </button>`
+          </button>`,
+        activateCallback: function(popover, button) {
+          refreshBibleRefs(popover);
+        }
       }) // Pass any littlefoot settings here.
     }
 </script>

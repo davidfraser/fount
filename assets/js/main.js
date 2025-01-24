@@ -66,6 +66,6 @@
 })();
 
 (function () {
-    bibleRefs = setupBibleRefs();
-    applyBibleRefs(bibleRefs);
+    setupBibleRefs();
+    applyBibleRefs();
 })();
