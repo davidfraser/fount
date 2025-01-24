@@ -29,6 +29,23 @@
     tslib "^2.4.0"
     undici "^5.22.1"
 
+"@pacote/get-style@1.1.7", "@pacote/get-style@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@pacote/get-style/-/get-style-1.1.7.tgz#b02d146f8eb7593f4733fc515b7d6702a4975c27"
+  integrity sha512-TGg2mrHvLtQC/d9dPy/GpVDIdvCT1PfYvbjsOQR0nU8o4ofuPy4NHRsPDUYjZXXbpMC5uPK6N/yitHO0Pon/lA==
+
+"@pacote/pixels@1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@pacote/pixels/-/pixels-1.1.7.tgz#385e7f1a0a593cbb5690888f873b28a31f5808b8"
+  integrity sha512-yztATcpzvQR4Y1iflLKQybTc/pr31LfAUAX2y2EE+62nqf9Q2gir5fcnVSSDYcEIONHAQHN+Pbb/V95Pg/fi7Q==
+  dependencies:
+    "@pacote/get-style" "^1.1.7"
+
+"@pacote/throttle@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@pacote/throttle/-/throttle-1.0.7.tgz#1967f2b56259d1bbaa2c8bcef47311a78b811cad"
+  integrity sha512-7iO/ehc4UFeBcdwRjS5gxJwB/SSbeCzrUVR+R0R2Dxxz96TE2KpKN32UdRuv/4WNc+oRgu1g0Jyq/+U6/mr01A==
+
 "@sentry-internal/tracing@7.73.0":
   version "7.73.0"
   resolved "https://registry.yarnpkg.com/@sentry-internal/tracing/-/tracing-7.73.0.tgz#4838f31e41d23a6041ef4520519b80f788bf1cac"
@@ -2238,6 +2255,13 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
 
+delegated-events@^1.0.10:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/delegated-events/-/delegated-events-1.1.2.tgz#741a4ba320718096fb8f7db4ddfaadcb0daa5986"
+  integrity sha512-PjEw4Z5mrvXimyf60HGqMJ3BMcqqWZpBqSDGnEMBdkAtF4P7ltoa6N+UJXhbMMUxPLYFtykCmRs6Ra8I8pwzPQ==
+  dependencies:
+    selector-set "^1.1.5"
+
 depd@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/depd/-/depd-2.0.0.tgz#b696163cc757560d09cf22cc8fad1571b79e76df"
@@ -3756,6 +3780,16 @@ lilconfig@^2.0.3, lilconfig@^2.0.5:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.1.0.tgz#78e23ac89ebb7e1bfbf25b18043de756548e7f52"
   integrity sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==
 
+littlefoot@4.0.0-8:
+  version "4.0.0-8"
+  resolved "https://registry.yarnpkg.com/littlefoot/-/littlefoot-4.0.0-8.tgz#b3755117ec976c7fee89f28e35cea44773a8ea83"
+  integrity sha512-dnX2RAGcVFcBWaO+XZz6bmHWjynJTCGKqznTdgkfMK8vTu4VKs9X+BfpR7BAW8vBEU+G/Rt3XKhDg8pNh4mYlg==
+  dependencies:
+    "@pacote/get-style" "1.1.7"
+    "@pacote/pixels" "1.1.7"
+    "@pacote/throttle" "1.0.7"
+    delegated-events "^1.0.10"
+
 livereload-js@^2.3.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/livereload-js/-/livereload-js-2.4.0.tgz#447c31cf1ea9ab52fc20db615c5ddf678f78009c"
@@ -5216,6 +5250,11 @@ secure-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/secure-keys/-/secure-keys-1.0.0.tgz#f0c82d98a3b139a8776a8808050b824431087fca"
   integrity sha512-nZi59hW3Sl5P3+wOO89eHBAAGwmCPd2aE1+dLZV5MO+ItQctIvAqihzaAXIQhvtH4KJPxM080HsnqltR2y8cWg==
+
+selector-set@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/selector-set/-/selector-set-1.1.5.tgz#60c135aea482b6f46a2d95ad72058927690a8634"
+  integrity sha512-6SQw6yMew5iOZ8/cDHDEnJWRM4ot2mxP6szZyF5ptrBogw4AcS4EXRj/8BUfgAMwVfdL84qpModlBMOl2NVrsQ==
 
 semver-greatest-satisfied-range@^1.1.0:
   version "1.1.0"
