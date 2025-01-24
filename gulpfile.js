@@ -45,7 +45,10 @@ function hbs(done) {
 
 function css(done) {
     pump([
-        src('assets/css/screen.css', {sourcemaps: true}),
+        src([
+            'assets/css/screen.css',
+            'node_modules/littlefoot/dist/littlefoot.css',
+         ], {sourcemaps: true}),
         postcss([
             easyimport,
             autoprefixer(),
@@ -63,6 +66,7 @@ function jslibs(done) {
             'node_modules/photoswipe/dist/photoswipe.min.js',
             'node_modules/photoswipe/dist/photoswipe-ui-default.min.js',
             'node_modules/reframe.js/dist/reframe.min.js',
+            'node_modules/littlefoot/dist/littlefoot.js',
         ]),
         dest('assets/js/lib'),
         livereload()

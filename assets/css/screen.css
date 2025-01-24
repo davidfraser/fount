@@ -3336,3 +3336,15 @@ figcaption a {
 .pswp--minimal--dark .pswp__top-bar {
     background: none;
 }
+
+/* 22. Footnotes styling */
+
+.littlefoot {
+    --popover-background-color: white;
+    --popover-horizontal-padding: 2rem;
+    --popover-vertical-padding: 1.5rem;
+    }
+
+.littlefoot__wrapper a {
+  text-decoration: underline;
+}

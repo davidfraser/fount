@@ -1,0 +1,64 @@
+{{! adapted from https://www.spectralwebservices.com/blog/footnotes-with-ease/ }}
+
+<script>
+let regex = new RegExp(/\[\[([0-9]+)\]\](?!:)/, 'g') ;
+
+document.querySelectorAll('article.c-content p, article.c-content li, article.c-content figcaption, article.c-content .kg-callout-text').forEach(element => {
+    var textchunk = "";
+    for (var i = 0; i < element.childNodes.length; i++) {
+        var curNode = element.childNodes[i];
+        if (curNode.nodeName === "#text") {
+            textchunk=curNode.nodeValue
+            const matches = curNode.nodeValue.matchAll(regex);
+            for (const match of matches) {
+
+                let firstpiece = textchunk.slice(0,match.index)
+                let lastpiece = textchunk.slice(match.index + match[0].length)
+                let linkpiece = `
+                <sup id="fnref:${match[1]}">
+                  <a href="#fn:${match[1]}">${match[1]}</a>
+                </sup>
+              `
+                let newpiece = firstpiece + linkpiece + lastpiece                 
+                let tmp = document.createRange().createContextualFragment(newpiece)
+                curNode.replaceWith(tmp)
+            }
+
+        
+        }
+    }
+}
+)
+
+
+    let regex2 = new RegExp(/\[\[([0-9]+)\]\]:/, 'g') 
+    
+    for (let node of document.querySelectorAll('article.c-content > p')) {
+                
+            textchunk=node.innerHTML
+            const matches = textchunk.matchAll(regex2);
+            for (const match of matches) {
+                    let newpiece = `<div class="footnotes"><ol><li class="footnote" id="fn:${match[1]}"><p>${textchunk.slice(match[1].length + 5)}. <a href="#fnref:${match[1]}" title="return to article"> ↩</a></p></ol></div>`
+
+                    let tmp = document.createRange().createContextualFragment(newpiece)
+                    node.replaceWith(tmp)
+            }
+
+    }
+            
+        
+</script>
+
+<script>
+
+  littlefoot.littlefoot({
+  buttonTemplate: `<button
+  aria-label="Footnote <% number %>"
+  class="littlefoot__button"
+  id="<% reference %>"
+  title="See Footnote <% number %>"
+/>
+  <% number %>
+</button>`
+  }) // Pass any littlefoot settings here.
+</script>
