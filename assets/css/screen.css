@@ -3343,7 +3343,12 @@ figcaption a {
     --popover-background-color: white;
     --popover-horizontal-padding: 2rem;
     --popover-vertical-padding: 1.5rem;
-    }
+    --popover-font-family: var(--gh-font-body, var(--font-serif-alt));
+    --button-margin: 0 0.1rem 1rem;
+    --button-height: 1.5rem;
+    --button-font-size: 0.9rem;
+    --button-font-weight: 600;
+}
 
 .littlefoot__wrapper a {
   text-decoration: underline;

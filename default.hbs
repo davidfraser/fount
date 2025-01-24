@@ -8,16 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     {{!-- Preload main styles and scripts for better performance --}}
-    <link rel="preload" as="style" href="{{asset "built/screen.css"}}">
     <link rel="preload" as="style" href="{{asset "built/littlefoot.css"}}">
+    <link rel="preload" as="style" href="{{asset "built/screen.css"}}">
     <link rel="preload" as="script" href="{{asset "built/source.js"}}">
     
     {{!-- Fonts are preloaded and defined in the default template to avoid layout shift --}}
     {{> "typography/fonts"}}
 
+    {{!-- Load littlefoot before scree.css so we can override styling --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "built/littlefoot.css"}}">
     {{!-- Theme assets - use the {{asset}} helper to reference styles & scripts, this will take care of caching and cache-busting automatically --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}">
-    <link rel="stylesheet" type="text/css" href="{{asset "built/littlefoot.css"}}">
 
     {{!-- Custom background color --}}
     <style>
